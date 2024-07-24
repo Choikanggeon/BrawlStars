@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 83ec5cb857fdd8348b901b7e875fc660, type: 3}
+  m_Name: Barley
+  m_EditorClassIdentifier: 
+  _fightType: 3
+  _health: 3500
+  _damage: 200
+  _bulletVelocity: 4
+  _bulletRange: 6
+  _ammo: 3
+  _reloadTime: 1.5
+  _skillEnergyLimit: 1000
+  _skillRange: 10
+  _skillDamage: 200
