@@ -1,0 +1,30 @@
+Begin Object Class=/Script/Engine.AnimMontage Name="AM_Shelly_Fire" ExportPath="/Script/Engine.AnimMontage'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire'"
+   Begin Object Class=/Script/AnimGraphRuntime.AnimNotify_PlayMontageNotify Name="AnimNotify_PlayMontageNotify_0" ExportPath="/Script/AnimGraphRuntime.AnimNotify_PlayMontageNotify'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:AnimNotify_PlayMontageNotify_0'"
+   End Object
+   Begin Object Class=/Script/UnrealEd.SceneThumbnailInfo Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Class=/Script/Engine.AnimDataModel Name="AnimDataModel" ExportPath="/Script/Engine.AnimDataModel'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:AnimDataModel'"
+   End Object
+   Begin Object Name="AnimNotify_PlayMontageNotify_0" ExportPath="/Script/AnimGraphRuntime.AnimNotify_PlayMontageNotify'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:AnimNotify_PlayMontageNotify_0'"
+   End Object
+   Begin Object Name="SceneThumbnailInfo_0" ExportPath="/Script/UnrealEd.SceneThumbnailInfo'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:SceneThumbnailInfo_0'"
+   End Object
+   Begin Object Name="AnimDataModel" ExportPath="/Script/Engine.AnimDataModel'/Game/sdfdsfdsfd/BrawlStarsReplica/Hero/Shelly/Animation/AM_Shelly_Fire.AM_Shelly_Fire:AnimDataModel'"
+      NumberOfFrames=33999
+      NumberOfKeys=34000
+      bPopulated=True
+   End Object
+   BlendIn=(BlendTime=0.000000)
+   CompositeSections(0)=(SectionName="Default",LinkedMontage="/Script/Engine.AnimMontage'AM_Shelly_Fire'",SegmentIndex=0,SegmentLength=0.566667)
+   CompositeSections(1)=(SectionName="End",LinkedMontage="/Script/Engine.AnimMontage'AM_Shelly_Fire'",SegmentIndex=0,SegmentLength=0.566667,LinkValue=0.248830)
+   SlotAnimTracks(0)=(AnimTrack=(AnimSegments=((AnimEndTime=0.566667))))
+   BranchingPointMarkers(0)=(NotifyIndex=0,TriggerTime=0.156087)
+   CommonTargetFrameRate=(Numerator=30)
+   Notifies(0)=(NotifyName="PlayMontageNotify",Notify="/Script/AnimGraphRuntime.AnimNotify_PlayMontageNotify'AnimNotify_PlayMontageNotify_0'",Guid=625DA4E242174F526DA507ADA1229A78,LinkedMontage="/Script/Engine.AnimMontage'AM_Shelly_Fire'",SegmentIndex=0,SegmentLength=0.566667,LinkValue=0.156087)
+   SequenceLength=0.566650
+   RateScale=1.300000
+   AnimNotifyTracks(0)=(TrackName="1",TrackColor=(R=0.500000,G=0.500000,B=0.500000,A=1.000000))
+   DataModelInterface=AnimDataModel'AM_Shelly_Fire:AnimDataModel'
+   ThumbnailInfo="/Script/UnrealEd.SceneThumbnailInfo'SceneThumbnailInfo_0'"
+   PreviewSkeletalMesh="/Game/BrawlStarsReplica/Hero/Shelly/Asset/Body/SK_Shelly_Body.SK_Shelly_Body"
+End Object
