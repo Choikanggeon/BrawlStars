@@ -1,0 +1,493 @@
+fileFormatVersion: 2
+guid: 08f6fdf5ec1fbd64998429eb00f1b03f
+timeCreated: 1526373254
+licenseType: Store
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Bed 01
+    100002: Big Rock 01
+    100004: Big Rock 02
+    100006: Bone Pillar 01
+    100008: Bone Pillar 02
+    100010: Bone Pillar 03
+    100012: Book 01
+    100014: Book 01 Page
+    100016: Border wall 01
+    100018: Border wall 02
+    100020: Bowl 01
+    100022: Bridge
+    100024: Cabinet 01
+    100026: Campfire
+    100028: Campfire Stone
+    100030: Candle 01
+    100032: Carpet 01
+    100034: Chair 01
+    100036: Cone Tree
+    100038: Crystal
+    100040: Crystal Base
+    100042: Decrepit Tree 01
+    100044: Door 01
+    100046: Door Frame 01
+    100048: Door Wood Mat 01
+    100050: Dungeon Entrance
+    100052: Fence
+    100054: Fence Middle
+    100056: Fence Pillar
+    100058: Fence Pillar 1
+    100060: Fireplace 01
+    100062: Grass
+    100064: Graveyard Statue
+    100066: Ground 01
+    100068: //RootNode
+    100070: Ground 02
+    100072: Ground Center
+    100074: Ground Corner
+    100076: Ground Glow
+    100078: Ground Island
+    100080: Ground Side
+    100082: Hut
+    100084: Hut 02
+    100086: Indoor Wall With Window 01
+    100088: Lamp
+    100090: Lily Pad
+    100092: Log
+    100094: Log Pin 01
+    100096: Log Pin 02
+    100098: Manhole Cover
+    100100: Ocean 02
+    100102: Picture 01
+    100104: Picture 01 Drawing
+    100106: Pillar 01
+    100108: Plate 01
+    100110: Pot 01
+    100112: Pot 01 Liquid
+    100114: Shelf 01
+    100116: Stairs 01
+    100118: Stairs Side Wall
+    100120: Stairs Step 01
+    100122: Stairs Step 02
+    100124: Stairs Step 03
+    100126: Sun Ray
+    100128: Table 01
+    100130: Table 02
+    100132: Tombstone 01
+    100134: Tombstone 02
+    100136: Tombstone 03
+    100138: Tree Log Bridge
+    100140: Vine Ground
+    100142: Vine01
+    100144: Wall 002
+    100146: Wall 01
+    100148: Wall Candle 01
+    100150: Wall Rock 01
+    100152: Wall Rock 02
+    100154: Wall Rock 03
+    100156: Water
+    100158: Waterfall
+    100160: Waypoint
+    100162: Well
+    100164: Window 01
+    400000: Bed 01
+    400002: Big Rock 01
+    400004: Big Rock 02
+    400006: Bone Pillar 01
+    400008: Bone Pillar 02
+    400010: Bone Pillar 03
+    400012: Book 01
+    400014: Book 01 Page
+    400016: Border wall 01
+    400018: Border wall 02
+    400020: Bowl 01
+    400022: Bridge
+    400024: Cabinet 01
+    400026: Campfire
+    400028: Campfire Stone
+    400030: Candle 01
+    400032: Carpet 01
+    400034: Chair 01
+    400036: Cone Tree
+    400038: Crystal
+    400040: Crystal Base
+    400042: Decrepit Tree 01
+    400044: Door 01
+    400046: Door Frame 01
+    400048: Door Wood Mat 01
+    400050: Dungeon Entrance
+    400052: Fence
+    400054: Fence Middle
+    400056: Fence Pillar
+    400058: Fence Pillar 1
+    400060: Fireplace 01
+    400062: Grass
+    400064: Graveyard Statue
+    400066: Ground 01
+    400068: Ground 02
+    400070: //RootNode
+    400072: Ground Center
+    400074: Ground Corner
+    400076: Ground Glow
+    400078: Ground Island
+    400080: Ground Side
+    400082: Hut
+    400084: Hut 02
+    400086: Indoor Wall With Window 01
+    400088: Lamp
+    400090: Lily Pad
+    400092: Log
+    400094: Log Pin 01
+    400096: Log Pin 02
+    400098: Manhole Cover
+    400100: Ocean 02
+    400102: Picture 01
+    400104: Picture 01 Drawing
+    400106: Pillar 01
+    400108: Plate 01
+    400110: Pot 01
+    400112: Pot 01 Liquid
+    400114: Shelf 01
+    400116: Stairs 01
+    400118: Stairs Side Wall
+    400120: Stairs Step 01
+    400122: Stairs Step 02
+    400124: Stairs Step 03
+    400126: Sun Ray
+    400128: Table 01
+    400130: Table 02
+    400132: Tombstone 01
+    400134: Tombstone 02
+    400136: Tombstone 03
+    400138: Tree Log Bridge
+    400140: Vine Ground
+    400142: Vine01
+    400144: Wall 002
+    400146: Wall 01
+    400148: Wall Candle 01
+    400150: Wall Rock 01
+    400152: Wall Rock 02
+    400154: Wall Rock 03
+    400156: Water
+    400158: Waterfall
+    400160: Waypoint
+    400162: Well
+    400164: Window 01
+    2300000: Bed 01
+    2300002: Big Rock 01
+    2300004: Big Rock 02
+    2300006: Bone Pillar 01
+    2300008: Bone Pillar 02
+    2300010: Bone Pillar 03
+    2300012: Book 01
+    2300014: Book 01 Page
+    2300016: Border wall 01
+    2300018: Border wall 02
+    2300020: Bowl 01
+    2300022: Bridge
+    2300024: Cabinet 01
+    2300026: Campfire
+    2300028: Campfire Stone
+    2300030: Candle 01
+    2300032: Carpet 01
+    2300034: Chair 01
+    2300036: Cone Tree
+    2300038: Crystal
+    2300040: Crystal Base
+    2300042: Decrepit Tree 01
+    2300044: Door 01
+    2300046: Door Frame 01
+    2300048: Door Wood Mat 01
+    2300050: Dungeon Entrance
+    2300052: Fence
+    2300054: Fence Middle
+    2300056: Fence Pillar
+    2300058: Fireplace 01
+    2300060: Grass
+    2300062: Graveyard Statue
+    2300064: Ground 01
+    2300066: Ground 02
+    2300068: Ground Center
+    2300070: Ground Corner
+    2300072: Ground Glow
+    2300074: Ground Island
+    2300076: Ground Side
+    2300078: Hut
+    2300080: Hut 02
+    2300082: Indoor Wall With Window 01
+    2300084: Lamp
+    2300086: Lily Pad
+    2300088: Log
+    2300090: Log Pin 01
+    2300092: Log Pin 02
+    2300094: Manhole Cover
+    2300096: Ocean 02
+    2300098: Picture 01
+    2300100: Picture 01 Drawing
+    2300102: Pillar 01
+    2300104: Plate 01
+    2300106: Pot 01
+    2300108: Pot 01 Liquid
+    2300110: Shelf 01
+    2300112: Stairs 01
+    2300114: Stairs Side Wall
+    2300116: Stairs Step 01
+    2300118: Stairs Step 02
+    2300120: Stairs Step 03
+    2300122: Sun Ray
+    2300124: Table 01
+    2300126: Table 02
+    2300128: Tombstone 01
+    2300130: Tombstone 02
+    2300132: Tombstone 03
+    2300134: Tree Log Bridge
+    2300136: Vine Ground
+    2300138: Vine01
+    2300140: Wall 002
+    2300142: Wall 01
+    2300144: Wall Candle 01
+    2300146: Wall Rock 01
+    2300148: Wall Rock 02
+    2300150: Wall Rock 03
+    2300152: Water
+    2300154: Waterfall
+    2300156: Waypoint
+    2300158: Well
+    2300160: Window 01
+    2300162: //RootNode
+    3300000: Bed 01
+    3300002: Big Rock 01
+    3300004: Big Rock 02
+    3300006: Bone Pillar 01
+    3300008: Bone Pillar 02
+    3300010: Bone Pillar 03
+    3300012: Book 01
+    3300014: Book 01 Page
+    3300016: Border wall 01
+    3300018: Border wall 02
+    3300020: Bowl 01
+    3300022: Bridge
+    3300024: Cabinet 01
+    3300026: Campfire
+    3300028: Campfire Stone
+    3300030: Candle 01
+    3300032: Carpet 01
+    3300034: Chair 01
+    3300036: Cone Tree
+    3300038: Crystal
+    3300040: Crystal Base
+    3300042: Decrepit Tree 01
+    3300044: Door 01
+    3300046: Door Frame 01
+    3300048: Door Wood Mat 01
+    3300050: Dungeon Entrance
+    3300052: Fence
+    3300054: Fence Middle
+    3300056: Fence Pillar
+    3300058: Fireplace 01
+    3300060: Grass
+    3300062: Graveyard Statue
+    3300064: Ground 01
+    3300066: Ground 02
+    3300068: Ground Center
+    3300070: Ground Corner
+    3300072: Ground Glow
+    3300074: Ground Island
+    3300076: Ground Side
+    3300078: Hut
+    3300080: Hut 02
+    3300082: Indoor Wall With Window 01
+    3300084: Lamp
+    3300086: Lily Pad
+    3300088: Log
+    3300090: Log Pin 01
+    3300092: Log Pin 02
+    3300094: Manhole Cover
+    3300096: Ocean 02
+    3300098: Picture 01
+    3300100: Picture 01 Drawing
+    3300102: Pillar 01
+    3300104: Plate 01
+    3300106: Pot 01
+    3300108: Pot 01 Liquid
+    3300110: Shelf 01
+    3300112: Stairs 01
+    3300114: Stairs Side Wall
+    3300116: Stairs Step 01
+    3300118: Stairs Step 02
+    3300120: Stairs Step 03
+    3300122: Sun Ray
+    3300124: Table 01
+    3300126: Table 02
+    3300128: Tombstone 01
+    3300130: Tombstone 02
+    3300132: Tombstone 03
+    3300134: Tree Log Bridge
+    3300136: Vine Ground
+    3300138: Vine01
+    3300140: Wall 002
+    3300142: Wall 01
+    3300144: Wall Candle 01
+    3300146: Wall Rock 01
+    3300148: Wall Rock 02
+    3300150: Wall Rock 03
+    3300152: Water
+    3300154: Waterfall
+    3300156: Waypoint
+    3300158: Well
+    3300160: Window 01
+    3300162: //RootNode
+    4300000: Cone Tree
+    4300002: Bridge
+    4300004: Well
+    4300006: Tree Log Bridge
+    4300008: Wall Rock 03
+    4300010: Wall Rock 01
+    4300012: Wall Rock 02
+    4300014: Bone Pillar 01
+    4300016: Bone Pillar 02
+    4300018: Bone Pillar 03
+    4300020: Log Pin 01
+    4300022: Grass
+    4300024: Waterfall
+    4300026: Log
+    4300028: Stairs Side Wall
+    4300030: Stairs Step 01
+    4300032: Stairs Step 02
+    4300034: Stairs Step 03
+    4300036: Border wall 01
+    4300038: Border wall 02
+    4300040: Tombstone 01
+    4300042: Tombstone 02
+    4300044: Tombstone 03
+    4300046: Fence
+    4300048: Campfire
+    4300050: Campfire Stone
+    4300052: Lamp
+    4300054: Dungeon Entrance
+    4300056: Fence Middle
+    4300058: Hut
+    4300060: Crystal Base
+    4300062: Crystal
+    4300064: Sun Ray
+    4300066: Lily Pad
+    4300068: Manhole Cover
+    4300070: Waypoint
+    4300072: Graveyard Statue
+    4300074: Vine01
+    4300076: Vine Ground
+    4300078: Log Pin 02
+    4300080: Fence Pillar
+    4300082: Ground Glow
+    4300084: Water
+    4300086: Ground Corner
+    4300088: Ground Side
+    4300090: Ground Center
+    4300092: Ground Island
+    4300094: Big Rock 01
+    4300096: Big Rock 02
+    4300098: Door Wood Mat 01
+    4300100: Hut 02
+    4300102: Wall 01
+    4300104: Pillar 01
+    4300106: Ground 01
+    4300108: Door Frame 01
+    4300110: Wall 002
+    4300112: Door 01
+    4300114: Table 01
+    4300116: Cabinet 01
+    4300118: Candle 01
+    4300120: Indoor Wall With Window 01
+    4300122: Window 01
+    4300124: Wall Candle 01
+    4300126: Chair 01
+    4300128: Carpet 01
+    4300130: Stairs 01
+    4300132: Bed 01
+    4300134: Shelf 01
+    4300136: Book 01
+    4300138: Book 01 Page
+    4300140: Pot 01
+    4300142: Pot 01 Liquid
+    4300144: Plate 01
+    4300146: Bowl 01
+    4300148: Fireplace 01
+    4300150: Table 02
+    4300152: Picture 01
+    4300154: Picture 01 Drawing
+    4300156: Decrepit Tree 01
+    4300158: Ocean 02
+    4300160: Ground 02
+  materials:
+    importMaterials: 0
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
