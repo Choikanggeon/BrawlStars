@@ -1,0 +1,378 @@
+fileFormatVersion: 2
+guid: ac282c36e5a6cd4499902e04dfdf2a9a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2098
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af46641ef6225914486cc631a6bccd1f
+      internalID: -494640909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_1
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 2098
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4329660eec3e1148bf145fbb5563f7e
+      internalID: 1008702161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1696
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96da905b4279dbf4f8ab47b27838922d
+      internalID: 1728941837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_3
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1696
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efac0eddd099e8e47a70d57ecc8ba2ac
+      internalID: 474852324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1294
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6aff1336678da546af4064ad21dd6da
+      internalID: 1879582828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_5
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 1294
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22bae6d486cb9c439fc540bc3f6aa6a
+      internalID: 1482167283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 892
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e875586d53e6754585574e88df49162
+      internalID: -833803017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_7
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 892
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17a2cee5fd7b1043835ebad131d0f3b
+      internalID: -1996530788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 490
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a53fe3295b16104f9ffaa9d1f1f54ae
+      internalID: -487416981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_9
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 490
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0e616266f9b591498ac8385d5e47ff8
+      internalID: -1971279135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 88
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c87a56eb0f7cf1d4ba6b4b87764498f9
+      internalID: -1189219188
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Mobile - Brawl Stars - Trophy Road Brawler Portraits_11
+      rect:
+        serializedVersion: 2
+        x: 565
+        y: 88
+        width: 565
+        height: 402
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace4fde5ee80cb84c9caae005cdd84c2
+      internalID: 507976549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 83e34dc7762ab864288e3941a68ad372
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_0: -494640909
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_1: 1008702161
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_10: -1189219188
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_11: 507976549
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_2: 1728941837
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_3: 474852324
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_4: 1879582828
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_5: 1482167283
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_6: -833803017
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_7: -1996530788
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_8: -487416981
+      Mobile - Brawl Stars - Trophy Road Brawler Portraits_9: -1971279135
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
