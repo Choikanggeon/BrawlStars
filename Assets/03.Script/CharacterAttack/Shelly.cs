@@ -19,6 +19,10 @@ public class Shelly : CharacterAttack
     public float edgeDstThreshold;
     public CharacterInfo _characterInfo;
 
+    // 충돌 발생 여부를 추적하는 변수
+    bool hasHitOccurred = false;
+    LineRenderer lineRenderer; // LineRenderer 변수 추가
+
     // Use this for initialization
     void Start()
     {
@@ -37,6 +41,18 @@ public class Shelly : CharacterAttack
             _firePosParent = PlayerController.instance._firePosParent;
         else
             _firePosParent = GetComponent<AIController>()._firePosParent;
+
+        lineRenderer = GetComponent<LineRenderer>(); // LineRenderer 컴포넌트 가져오기
+        if (lineRenderer == null)
+        {
+            lineRenderer = gameObject.AddComponent<LineRenderer>(); // 없다면 추가
+        }
+
+        // LineRenderer 설정
+        lineRenderer.positionCount = 0;
+        lineRenderer.startWidth = 0.1f;
+        lineRenderer.endWidth = 0.1f;
+        lineRenderer.useWorldSpace = true;
     }
 
     // Update is called once per frame
@@ -67,6 +83,7 @@ public class Shelly : CharacterAttack
 
         if (!_shotIndicator.activeSelf)
         {
+            hasHitOccurred = false; // 초기화
             _shotIndicator.SetActive(true);
             _drawIndicatorRoutine = StartCoroutine(DrawAttackIndicator(isSkill));
         }
@@ -196,10 +213,16 @@ public class Shelly : CharacterAttack
 
         while (true)
         {
+            if (hasHitOccurred) // 충돌 발생 여부를 확인
+            {
+                yield return null;
+                continue; // 충돌 발생 시 더 이상 그리지 않음
+            }
+
             int stepCount = Mathf.RoundToInt(viewAngle * meshResolution);
             float stepAngleSize = viewAngle / stepCount;
             List<Vector3> viewPoints = new List<Vector3>();
-            Vector3 fireParentPos = _firePosParent.transform.position;
+            Vector3 fireParentPos = _firePosParent.transform.localPosition; // localPosition에서 position으로 변경
 
             for (int i = 0; i < stepCount; i++)
             {
@@ -216,6 +239,7 @@ public class Shelly : CharacterAttack
                 {
                     point = hit.point;
                     viewPoints.Add(point);
+                    hasHitOccurred = true; // 충돌 발생 설정
                     break; // 충돌 지점에서 그리기 중단
                 }
                 else
@@ -253,10 +277,22 @@ public class Shelly : CharacterAttack
                 }
             }
 
+            // 충돌이 발생하면 추가적인 점을 추가하지 않도록 처리
+            if (hasHitOccurred)
+            {
+                vertexCount = viewPoints.Count * 2; // 충돌 발생 후의 vertexCount 조정
+                vertices = new Vector3[vertexCount];
+                triangles = new int[(vertexCount - 2) * 3];
+            }
+
             viewMesh.Clear();
             viewMesh.vertices = vertices;
             viewMesh.triangles = triangles;
             viewMesh.RecalculateNormals();
+
+            // LineRenderer 설정
+            lineRenderer.positionCount = viewPoints.Count;
+            lineRenderer.SetPositions(viewPoints.ToArray());
 
             yield return new WaitForEndOfFrame();
         }

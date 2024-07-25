@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
     {
         // Fire the attack
         _characterAttack.FireBaseAttack();
-
+        _characterAttack.StopDrawIndicator();
         // Rotate the player towards the fire direction
         Vector3 fireDir = new Vector3(_attackStickDir.x, 0, _attackStickDir.y).normalized;
         if (fireDir != Vector3.zero)

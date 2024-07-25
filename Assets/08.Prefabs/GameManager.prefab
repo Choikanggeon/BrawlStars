@@ -46,17 +46,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characters:
-  - {fileID: 1844496324247008, guid: a3bbb89e869e88b4abaebdabd21b14c8, type: 3}
-  - {fileID: 1574435845297744, guid: 244c1e2c333533d41b300b9aa423a496, type: 3}
-  - {fileID: 1953109182388092, guid: ea3bd78ba2384be49a3dcee2bbf5f440, type: 3}
+  - {fileID: 8941120963119418030, guid: cdd9bc7d7d0d42f48a73fc8982ae6ce1, type: 3}
+  - {fileID: 1278068469828761923, guid: 7f095875a993abd4f853eec55a6bfff7, type: 3}
+  - {fileID: 699956561813924165, guid: 6c02ab99ea36100419da6cc077d793c2, type: 3}
   _AICharacters:
   - {fileID: 8282199254134394919, guid: 136dd8a409b1e7e408f97930011b3ef2, type: 3}
   - {fileID: 3754388574311466634, guid: 4fe286c027569984d8ab3c8cbd564f58, type: 3}
   - {fileID: 7743256658257058051, guid: 55eb061db21350245b4c1eb8c85f6831, type: 3}
   _selectedCharacterIdx: 0
   _centerObject: {fileID: 0}
-  _LobbySound: {fileID: 8300000, guid: 86c5ef3d3d2604079a22f0f1b244b4cc, type: 3}
-  _InGameSound: {fileID: 8300000, guid: 7e274fd868e2a4b56ade76a49b15ed42, type: 3}
+  _LobbySound: {fileID: 8300000, guid: 035ebb075424c1149b3eb5ee2171f177, type: 3}
+  _InGameSound: {fileID: 8300000, guid: fd77c60615a50d344b9d21bce6e543d7, type: 3}
 --- !u!82 &121166721
 AudioSource:
   m_ObjectHideFlags: 0
@@ -67,7 +67,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 86c5ef3d3d2604079a22f0f1b244b4cc, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 035ebb075424c1149b3eb5ee2171f177, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
