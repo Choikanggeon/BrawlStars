@@ -13,7 +13,7 @@ public class CameraMovement : MonoBehaviour
     bool moving = false;
     bool following = false;
     float StartCameraSpeed = 1f;
-    float CurrentCameraSpeed = 0.125f;
+    float CurrentCameraSpeed = 0.2f;
 
     void Start()
     {

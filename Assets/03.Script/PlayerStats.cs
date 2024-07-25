@@ -249,6 +249,7 @@ public class PlayerStats : MonoBehaviour {
                 SkillCanvas.instance._innerCircle.GetComponent<Image>().sprite =
                     _skillImg_After;
                 SkillCanvas.instance._innerCircle.GetComponent<Image>().raycastTarget = true;
+                SkillCanvas.instance._innerCircle.GetComponent<Button>().enabled = true;
             }
             _skillFireReady = true;
         }

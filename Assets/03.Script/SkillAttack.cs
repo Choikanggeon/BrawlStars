@@ -28,7 +28,6 @@ public class SkillAttack : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     public void OnDrag(PointerEventData data)
     {
         if (!_isControlling) return;
-
         Vector2 stickDir = data.position - _startPos;
 
         float outterRadius = (_outterCircle.GetComponent<RectTransform>().rect.width / 2) *
