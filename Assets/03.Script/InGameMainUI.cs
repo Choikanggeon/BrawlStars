@@ -51,20 +51,20 @@ public class InGameMainUI : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         _StartText.SetActive(true);
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(2f);
         _StartText.SetActive(false);
     }
 
     IEnumerator StartPlayerInfo()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(3f);
         _MachStartTime.SetActive(true);
         _PlayerInfoUp.SetActive(true);
         _PlayerInfoDown.SetActive(true);
         StartCoroutine(MatchTimeCount());
         float startTime = 0f;
-        Vector3 InfoUpStartPos = _PlayerInfoUp.GetComponent<RectTransform>().position;
-        Vector3 InfoDownStartPos = _PlayerInfoDown.GetComponent<RectTransform>().position;
+        Vector3 InfoUpStartPos = _PlayerInfoUp.GetComponent<RectTransform>().anchoredPosition;
+        Vector3 InfoDownStartPos = _PlayerInfoDown.GetComponent<RectTransform>().anchoredPosition;
         Vector3 InfoEndPos = Vector3.zero;
 
         // 새로운 음악 재생
@@ -76,12 +76,12 @@ public class InGameMainUI : MonoBehaviour
         while (startTime <= 0.3f)
         {
             startTime += Time.deltaTime;
-            _PlayerInfoUp.transform.position = Vector3.Lerp(InfoUpStartPos, InfoEndPos, startTime / 0.3f);
-            _PlayerInfoDown.transform.position = Vector3.Lerp(InfoDownStartPos, InfoEndPos, startTime / 0.3f);
+            _PlayerInfoUp.GetComponent<RectTransform>().anchoredPosition = Vector3.Lerp(InfoUpStartPos, InfoEndPos, startTime / 0.3f);
+            _PlayerInfoDown.GetComponent<RectTransform>().anchoredPosition = Vector3.Lerp(InfoDownStartPos, InfoEndPos, startTime / 0.3f);
             yield return null;
         }
 
-        yield return new WaitForSeconds(4f);
+        yield return new WaitForSeconds(3.7f);
         _PlayerInfoUp.SetActive(false);
         _PlayerInfoDown.SetActive(false);
         _isCameraToPlayer = true;
@@ -95,7 +95,7 @@ public class InGameMainUI : MonoBehaviour
         Transform text_MatchStartTime = _MachStartTime.transform.Find("Text_MatchStartTimeText");
         var matchTime = text_MatchStartTime.gameObject.GetComponent<TextMeshProUGUI>();
 
-        while (matchstartTime > 0)
+        while (matchstartTime >= 0)
         {
             elapsedTime += Time.deltaTime;
 
@@ -115,7 +115,7 @@ public class InGameMainUI : MonoBehaviour
 
     IEnumerator StartBrawlMessage()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(7.7f);
         _BrawlTextImg.SetActive(true);
         yield return new WaitForSeconds(1f);
         _BrawlTextImg.SetActive(false);

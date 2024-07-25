@@ -51,7 +51,7 @@ public class CameraMovement : MonoBehaviour
 
     IEnumerator WaitCameraMoving()
     {
-        yield return new WaitForSeconds(4.5f);
+        yield return new WaitForSeconds(3f);
         moving = true;
     }
 }

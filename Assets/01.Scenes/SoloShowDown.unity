@@ -21661,11 +21661,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 088b086a194cfc94493809731d9e9e9d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  initialPosition: {x: 197, y: 0, z: 136}
+  initialPosition: {x: 185, y: 0, z: 136}
   offset: {x: 0, y: 70, z: -25}
   rotation: {x: 70, y: 0, z: 0}
-  StartCameraSpeed: 1
-  CurrentCameraSpeed: 0.125
 --- !u!1001 &947569588
 PrefabInstance:
   m_ObjectHideFlags: 0
