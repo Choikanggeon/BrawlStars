@@ -1416,7 +1416,7 @@ PrefabInstance:
       addedObject: {fileID: 5422356723501242855}
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 1011b3e73e7e8f24aa7ceb5fd820c18d, type: 3}
       insertIndex: -1
-      addedObject: {fileID: 6925421434803344429}
+      addedObject: {fileID: 7471777433933363736}
   m_SourcePrefab: {fileID: 100100000, guid: 1011b3e73e7e8f24aa7ceb5fd820c18d, type: 3}
 --- !u!4 &2073928391950049788 stripped
 Transform:
@@ -1635,7 +1635,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &6925421434803344429
+--- !u!114 &7471777433933363736
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1649,8 +1649,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _attackStickDir: {x: 0, y: 0, z: 0}
   isActivatingSkill: 0
-  _firePosParent: {fileID: 0}
-  _firePos: {fileID: 0}
+  _firePosParent: {fileID: 6226989257459040018}
+  _firePos: {fileID: 6928374705097934703}
   _enemy: {fileID: 0}
   _crystal: {fileID: 0}
   _tag: 

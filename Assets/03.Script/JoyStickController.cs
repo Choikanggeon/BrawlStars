@@ -124,6 +124,5 @@ public class JoyStickController : MonoBehaviour
 
         _innerCircle.SetActive(false);
         _outterCircle.SetActive(false);
-
     }
 }

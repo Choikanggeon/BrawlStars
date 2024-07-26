@@ -18,7 +18,7 @@ public class AIController : MonoBehaviour
 
     GameObject _enemyInGrass;
     public GameObject _enemy;
-    public GameObject _crystal;
+    public GameObject _energyBox;
 
     public string _tag = null;
     public string _enemyTag = null;
@@ -62,7 +62,6 @@ public class AIController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        return;
         // 할당된 적 오브젝트가 active == false 라는 것은 죽었다는 것
         // 때문에 죽은 적을 따라가지 않기 위해 null 로 초기화
         if (_enemy != null && !_enemy.active) _enemy = null;
@@ -114,14 +113,14 @@ public class AIController : MonoBehaviour
         }
         //적 탐지 Trigger에 크리스탈과 적 둘 모두가 있을 경우
         //더 가까운 것을 타겟으로 정한다.
-        else if (_crystal != null && _enemy != null)
+        else if (_energyBox != null && _enemy != null)
         {
-            float distanceTarget = Vector3.Distance(transform.position, _crystal.transform.position);
+            float distanceTarget = Vector3.Distance(transform.position, _energyBox.transform.position);
             float distanceEnemy = Vector3.Distance(transform.position, _enemy.transform.position);
             if (distanceTarget < distanceEnemy)
             {
                 _agent.stoppingDistance = 0.5f;
-                _agent.SetDestination(_crystal.transform.position);
+                _agent.SetDestination(_energyBox.transform.position);
             }
             else
             {
@@ -135,10 +134,10 @@ public class AIController : MonoBehaviour
                     _enemy = null;
             }
         }
-        else if (_crystal != null) // 크리스탈만 할당되었을 때
+        else if (_energyBox != null) // 에너지 상자만 할당되었을 때
         {
             _agent.stoppingDistance = 0.5f;
-            _agent.SetDestination(_crystal.transform.position);
+            _agent.SetDestination(_energyBox.transform.position);
         }
         else if(_enemy != null) // 적만 할당되었을 때
         {
@@ -158,7 +157,7 @@ public class AIController : MonoBehaviour
             if (_agent.remainingDistance <= 1f)
                 _LastSeenPosition = Vector3.zero;
         }
-        else // 크리스탈과 적 모두 할당되어 있지 않으면 맵의 중앙으로 이동
+        else 
         {
             _agent.SetDestination(new Vector3(0, 0, 0));
         }
@@ -201,7 +200,6 @@ public class AIController : MonoBehaviour
     {
         isActivatingSkill = false;
         _enemy = null;
-        _crystal = null;    
         _LastSeenPosition = Vector3.zero;
     }
 }

@@ -16,7 +16,6 @@ public class PlayerStats : MonoBehaviour {
     public GameObject _ExplosionBluePrefab;
     public GameObject _EnergyPrefab;
     public Vector3 _spawnPosition;
-    public GameObject _crystal;
     public AudioClip _dyingSound;
     protected AudioSource _audioSource;
 
