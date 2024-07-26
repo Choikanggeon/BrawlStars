@@ -272,7 +272,7 @@ public class PlayerStats : MonoBehaviour {
         SkillCanvas.instance._gage.GetComponent<Image>().enabled = true;
         SkillCanvas.instance._gage.GetComponent<Image>().fillAmount = 0;
         SkillCanvas.instance._innerCircle.GetComponent<Image>().raycastTarget = false;
-
+        SkillCanvas.instance._innerCircle.GetComponent<Button>().enabled = false;
         SkillCanvas.instance._outterCircle.GetComponent<Image>().sprite =
                 _skillBG_Before;
         SkillCanvas.instance._innerCircle.GetComponent<Image>().sprite =

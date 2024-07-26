@@ -10,6 +10,7 @@ public class SkillAttack : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     bool _skillFire;
     bool _baseAttckFire;
     GameObject _outterCircle;
+    JoyStickController joyStickController;
     public bool _isControlling { get; private set; }
     // Use this for initialization
     void Start () {
@@ -22,8 +23,9 @@ public class SkillAttack : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         _outterCircle = SkillCanvas.instance._outterCircle;
 
         GetComponent<Image>().raycastTarget = false;
-        
-	}
+        GetComponent<Button>().enabled = false;
+        joyStickController = FindObjectOfType<JoyStickController>();
+    }
 
     public void OnDrag(PointerEventData data)
     {
@@ -68,6 +70,7 @@ public class SkillAttack : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
 
     public void OnPointerUp(PointerEventData data)
     {
+        JoyStickController.skillButtonClicked = false;
         if (!_isControlling) return;
 
         _isControlling = false; 
@@ -76,10 +79,18 @@ public class SkillAttack : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         if (_skillFire)
              PlayerController.instance.FireSkillAttack();
         PlayerController.instance._attackStickDir = Vector3.zero;
+        if (!joyStickController.gameObject.activeSelf)
+        {
+            joyStickController.gameObject.SetActive(true);
+        }
     }
 
     public void OnPointerDown(PointerEventData data) {
         if(!PlayerController.instance._shotIndicator.enabled)
             _isControlling = true;
+        if (joyStickController.gameObject.activeSelf)
+        {
+            joyStickController.gameObject.SetActive(false);
+        }
     }
 }

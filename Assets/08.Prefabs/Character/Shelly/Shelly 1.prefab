@@ -1483,7 +1483,7 @@ MonoBehaviour:
   _skillBG_Before: {fileID: 21300000, guid: 622ba4be067302d439d07b1efabb7861, type: 3}
   _skillBG_After: {fileID: 21300000, guid: e237de67c278f480f96d422309901992, type: 3}
   _skillImg_Before: {fileID: 2011657798, guid: 1d52430c94ae3c94d9eb125002bfeb86, type: 3}
-  _skillImg_After: {fileID: 17140124, guid: 1d52430c94ae3c94d9eb125002bfeb86, type: 3}
+  _skillImg_After: {fileID: 21300000, guid: 9d2723ef44e32f245a4b13759a4bf3dd, type: 3}
 --- !u!114 &-3081345341372219608
 MonoBehaviour:
   m_ObjectHideFlags: 0

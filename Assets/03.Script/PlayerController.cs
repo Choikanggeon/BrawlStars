@@ -102,7 +102,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        HandleMouseInput(); // 추가된 마우스 입력 처리 코드
+        HandleMouseInput(); // 추가된 마우스 입력 처리 코
     }
 
     private void MouseDownOnUpdate()

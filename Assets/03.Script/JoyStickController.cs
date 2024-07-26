@@ -7,8 +7,9 @@ public class JoyStickController : MonoBehaviour
 {
     public GameObject _innerCircle;
     public GameObject _outterCircle;
-
+    SkillAttack SkillAttack;
     PlayerController _playerController;
+    public static bool skillButtonClicked = false;
 
     bool aiming = false;
     int fingerID = -1;
@@ -27,38 +28,19 @@ public class JoyStickController : MonoBehaviour
     {
         if (!aiming) return;
 
-        bool touchHandled = false;
-
-        foreach (Touch touch in Input.touches)
+        if (Input.GetMouseButton(0))
         {
-            if (touch.fingerId == fingerID)
-            {
-                HandleInput(touch.position);
-                touchHandled = true;
-
-                if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
-                {
-                    StopControlling();
-                }
-            }
+            HandleInput(Input.mousePosition);
         }
-
-        // 터치가 처리되지 않았고 마우스 입력이 있을 경우
-        if (!touchHandled)
+        else if (Input.GetMouseButtonUp(0))
         {
-            if (Input.GetMouseButton(0))
-            {
-                HandleInput(Input.mousePosition);
-            }
-            else if (Input.GetMouseButtonUp(0))
-            {
-                StopControlling();
-            }
+            StopControlling();
         }
     }
 
     private void HandleInput(Vector2 position)
     {
+        gameObject.SetActive(true);
         _innerCircle.transform.position = position;
         _stickDir = _innerCircle.transform.position - _outterCircle.transform.position;
 

@@ -473,9 +473,9 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 224401333045777106}
   - {fileID: 224675278578028404}
   - {fileID: 224927392974455004}
+  - {fileID: 224401333045777106}
   - {fileID: 8687648681600361853}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -562,6 +562,13 @@ MonoBehaviour:
   _AttackStick_Panel: {fileID: 1703630291965376}
   _MovementStick_Panel: {fileID: 1249291044998698}
   _SkillSitck_Panel: {fileID: 1580964329303060}
+  _StartText: {fileID: 0}
+  _PlayerInfoUp: {fileID: 0}
+  _PlayerInfoDown: {fileID: 0}
+  _MachStartTime: {fileID: 0}
+  _BrawlTextImg: {fileID: 0}
+  _Brawlintro: {fileID: 0}
+  _isCameraToPlayer: 0
 --- !u!1 &1580964329303060
 GameObject:
   m_ObjectHideFlags: 0
