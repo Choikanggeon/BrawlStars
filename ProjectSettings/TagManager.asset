@@ -9,6 +9,7 @@ TagManager:
   - NotGrass
   - Grass
   - EnergyBox
+  - Ground
   layers:
   - Default
   - TransparentFX
@@ -16,8 +17,8 @@ TagManager:
   - obstacleMask
   - Water
   - UI
-  - 
-  - 
+  - ground
+  - Player
   - 
   - 
   - 

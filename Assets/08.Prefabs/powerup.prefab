@@ -116,7 +116,7 @@ MonoBehaviour:
   maxDistance: 0
   layerMask:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 128
 --- !u!95 &3916817934061404363
 Animator:
   serializedVersion: 5
