@@ -64,8 +64,8 @@ public class Shelly : CharacterAttack
 
     public override void FireBaseAttack()
     {
-        if (!_playerStats.onFire()) return; // 탄알수가 남아있지 않으면 return;
-        StartCoroutine(ActivateBaseAttack(false));
+        if (!_playerStats.onFire()) return; //onFire()의 bool값이 false면 함수 나가고
+        StartCoroutine(ActivateBaseAttack(false));//코루틴 실행 activateBaseAttack
     }
 
     public override void FireSkillAttack()
@@ -138,7 +138,7 @@ public class Shelly : CharacterAttack
 
         _audioSource.Play();
 
-        yield return new WaitForSeconds(0.02f);
+        yield return new WaitForSeconds(0.2f);
         for (int i = 0; i < stepCount; i++)
         {
             float y_stick = Vector3.Angle(Vector3.forward, fireDir);

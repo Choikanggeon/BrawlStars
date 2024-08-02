@@ -15,6 +15,7 @@ public class AIController : MonoBehaviour
     public bool isActivatingSkill;
     public GameObject _firePosParent;
     public GameObject _firePos;
+    MapAllocator _mapAllocator;
 
     GameObject _enemyInGrass;
     public GameObject _enemy;
@@ -28,6 +29,10 @@ public class AIController : MonoBehaviour
 
     Vector3[] _avoidEnemy = new Vector3[2];
 
+    // 발사 대기시간을 위한 변수
+    private float lastFireTime;
+    private float fireCooldown = 0.2f; // 0.2초간 대기시간
+
     // Start is called before the first frame update
     void Start()
     {
@@ -40,16 +45,59 @@ public class AIController : MonoBehaviour
         _agent.updatePosition = true;
 
         _tag = gameObject.tag;
-        if (_tag.CompareTo("Company") == 0)
+        if (_tag.CompareTo("Competition") == 0)
             _enemyTag = "Competition";
-        else if (tag.CompareTo("Competition") == 0)
-            _enemyTag = "Company";
 
-        _LastSeenPosition = Vector3.zero;
+        _mapAllocator = MapAllocator.instance;
+        if (_mapAllocator != null)
+        {
+            int characterIdx = _mapAllocator._selectedCharacterIdx;
+            GameObject playerPos = _mapAllocator._playerPos[characterIdx];
+
+            // playerPos에 따라 다른 행동을 수행하는 switch 문
+            switch (characterIdx)
+            {
+                case 0:
+                    _LastSeenPosition = new Vector3(286, 0, 60);
+                    break;
+                case 1:
+                    _LastSeenPosition = new Vector3(286, 0, 60);
+                    break;
+                case 2:
+                    _LastSeenPosition = new Vector3(268, 0, 189);
+                    break;
+                case 3:
+                    _LastSeenPosition = new Vector3(239, 0, 224);
+                    break;
+                case 4:
+                    _LastSeenPosition = new Vector3(159, 0, 195);
+                    break;
+                case 5:
+                    _LastSeenPosition = new Vector3(114, 0, 190);
+                    break;
+                case 6:
+                    _LastSeenPosition = new Vector3(60, 0, 75);
+                    break;
+                case 7:
+                    _LastSeenPosition = new Vector3(113, 0, 60);
+                    break;
+                case 8:
+                    _LastSeenPosition = new Vector3(165, 0, -3);
+                    break;
+                case 9:
+                    _LastSeenPosition = new Vector3(210, 0, 40);
+                    break;
+            }
+        }
+
+        _agent.SetDestination(_LastSeenPosition);
         _detected = false;
 
         _avoidEnemy[0] = new Vector3(10, 0, 16);
         _avoidEnemy[1] = new Vector3(10, 0, -16);
+
+        // 초기 발사 시간을 0으로 설정
+        lastFireTime = 0f;
     }
 
     private void FixedUpdate()
@@ -59,28 +107,27 @@ public class AIController : MonoBehaviour
         GetComponentInChildren<SkinnedMeshRenderer>().enabled = true;
         _playerStats._playerInfoCanvas.GetComponent<Canvas>().enabled = true;
     }
+
+
+
     // Update is called once per frame
     void Update()
     {
-        // 할당된 적 오브젝트가 active == false 라는 것은 죽었다는 것
-        // 때문에 죽은 적을 따라가지 않기 위해 null 로 초기화
-        if (_enemy != null && !_enemy.active) _enemy = null;
-
         // 적이 할당되어 있다면, _firePosParent 를 적의 방향으로 회전시켜야함
-        // isActivatingSKill == true 라는 것은 공격하는 중,
+        // isActivatingSkill == true 라는 것은 공격하는 중,
         // 브롤스타즈 특성상 공격중에는 방향이 바뀌지 않음
         if (_enemy && !isActivatingSkill)
         {
-            _attackStickDir = _enemy.transform.position -  transform.position;
-            _attackStickDir = new Vector3(_attackStickDir.x, _attackStickDir.z, 0); 
+            _attackStickDir = _enemy.transform.position - transform.position;
+            _attackStickDir = new Vector3(_attackStickDir.x, _attackStickDir.z, 0);
             _firePosParent.transform.rotation = Quaternion.LookRotation(_attackStickDir);
         }
-        else if(_attackStickDir != Vector3.zero)
+        else if (_attackStickDir != Vector3.zero)
         {
             _firePosParent.transform.rotation = Quaternion.LookRotation(_attackStickDir);
         }
 
-        if(_enemy != null)
+        if (_enemy != null)
         {
             if (Vector3.Distance(transform.position, _enemy.transform.position) <
                 _playerStats._bulletRange)
@@ -111,8 +158,6 @@ public class AIController : MonoBehaviour
             else if (gameObject.CompareTag("Competition"))
                 _agent.SetDestination(_avoidEnemy[0]);
         }
-        //적 탐지 Trigger에 크리스탈과 적 둘 모두가 있을 경우
-        //더 가까운 것을 타겟으로 정한다.
         else if (_energyBox != null && _enemy != null)
         {
             float distanceTarget = Vector3.Distance(transform.position, _energyBox.transform.position);
@@ -139,7 +184,7 @@ public class AIController : MonoBehaviour
             _agent.stoppingDistance = 0.5f;
             _agent.SetDestination(_energyBox.transform.position);
         }
-        else if(_enemy != null) // 적만 할당되었을 때
+        else if (_enemy != null) // 적만 할당되었을 때
         {
             if (!_enemy.GetComponent<PlayerStats>()._isCharacterInGrass)
             {
@@ -154,10 +199,8 @@ public class AIController : MonoBehaviour
         {
             _agent.stoppingDistance = 0.5f;
             _agent.SetDestination(_LastSeenPosition);
-            if (_agent.remainingDistance <= 1f)
-                _LastSeenPosition = Vector3.zero;
         }
-        else 
+        else
         {
             _agent.SetDestination(new Vector3(0, 0, 0));
         }

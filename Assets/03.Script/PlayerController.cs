@@ -197,7 +197,6 @@ public class PlayerController : MonoBehaviour
                 InGameMainUI.instance.AttackStick.StopControlling();
                 _isReadyToFire = false;
             }
-            
         }
     }
 

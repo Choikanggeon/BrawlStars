@@ -10,6 +10,7 @@ TagManager:
   - Grass
   - EnergyBox
   - Ground
+  - Company
   layers:
   - Default
   - TransparentFX

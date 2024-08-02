@@ -182,13 +182,12 @@ public class PlayerStats : MonoBehaviour {
             _isCharacterInGrass = true;
         }
     }
- 
+
 
     public bool onFire()
     {
         if (_currentAmmo <= 0) return false;
-        if (_reloadRoutine != null)
-            StopCoroutine(_reloadRoutine);
+
         _currentAmmo--;
 
         _currentReloadAmount -= (float)1 / _ammo;
@@ -199,11 +198,13 @@ public class PlayerStats : MonoBehaviour {
         }
         _reload = true;
         //StopAllCoroutines();
+        if (_reloadRoutine != null)
+            StopCoroutine(_reloadRoutine);
         _reloadRoutine = StartCoroutine(Reload());
 
         return true;
     }
-    
+
     IEnumerator Reload()
     {
         float startTime = Time.time;
@@ -218,13 +219,13 @@ public class PlayerStats : MonoBehaviour {
             if (gameObject.CompareTag("Player"))
                 reloadBarImage.fillAmount = _currentReloadAmount;
 
-            int i = 0; 
-            while(i <= _ammo)
+            int i = 0;
+            while (i <= _ammo)
             {
-                if(_currentReloadAmount >= (float)(_ammo-i) / _ammo)
+                if (_currentReloadAmount >= (float)(_ammo - i) / _ammo)
                 {
                     _currentAmmo = _ammo - i;
-                    if(gameObject.CompareTag("Player"))
+                    if (gameObject.CompareTag("Player"))
                         _ammoBar.GetComponent<Image>().fillAmount = (float)(_ammo - i) / _ammo;
                     break;
                 }
