@@ -108,8 +108,6 @@ public class AIController : MonoBehaviour
         _playerStats._playerInfoCanvas.GetComponent<Canvas>().enabled = true;
     }
 
-
-
     // Update is called once per frame
     void Update()
     {
@@ -129,20 +127,23 @@ public class AIController : MonoBehaviour
 
         if (_enemy != null)
         {
-            if (Vector3.Distance(transform.position, _enemy.transform.position) <
-                _playerStats._bulletRange)
+            if (Vector3.Distance(transform.position, _enemy.transform.position) < _playerStats._bulletRange)
             {
-                if (_playerStats._skillFireReady)
-                    FireSkillAttack();
-                else
-                    FireBasicAttack();
+                if (Time.time >= lastFireTime + fireCooldown) // 쿨다운 체크
+                {
+                    if (_playerStats._skillFireReady)
+                        FireSkillAttack();
+                    else
+                        FireBasicAttack();
+
+                    lastFireTime = Time.time; // 발사 시간을 갱신
+                }
             }
         }
 
         if (_playerStats._health <= 1000)
         {
-            if (_enemy != null && _enemy.GetComponent<PlayerStats>()._health <=
-                _playerStats._health)
+            if (_enemy != null && _enemy.GetComponent<PlayerStats>()._health <= _playerStats._health)
             {
                 if (!_enemy.GetComponent<PlayerStats>()._isCharacterInGrass)
                 {
@@ -220,13 +221,19 @@ public class AIController : MonoBehaviour
 
     public void FireBasicAttack()
     {
-        _characterAttack.FireBaseAttack();
+        if (_playerStats.onFire()) // 현재 총알이 있는지 확인
+        {
+            _characterAttack.FireBaseAttack();
+        }
     }
 
     public void FireSkillAttack()
     {
-        _playerStats.InitializeSkillGage();
-        _characterAttack.FireSkillAttack();
+        if (_playerStats._skillFireReady)
+        {
+            _playerStats.InitializeSkillGage();
+            _characterAttack.FireSkillAttack();
+        }
     }
 
     private void OnTriggerStay(Collider other)

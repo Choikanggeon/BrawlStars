@@ -186,7 +186,7 @@ public class PlayerStats : MonoBehaviour {
 
     public bool onFire()
     {
-        if (_currentAmmo <= 0) return false;
+        if (_currentAmmo <= 0) return false; // 총알이 없으면 false 반환
 
         _currentAmmo--;
 
@@ -197,12 +197,11 @@ public class PlayerStats : MonoBehaviour {
             _reloadBar.GetComponent<Image>().fillAmount = _currentReloadAmount;
         }
         _reload = true;
-        //StopAllCoroutines();
         if (_reloadRoutine != null)
             StopCoroutine(_reloadRoutine);
         _reloadRoutine = StartCoroutine(Reload());
 
-        return true;
+        return true; // 총알이 있으면 true 반환
     }
 
     IEnumerator Reload()
